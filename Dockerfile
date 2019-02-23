@@ -1,6 +1,6 @@
 FROM maven:3.3-jdk-8 as build
 COPY . .
-RUN mvn clean compile test
+CMD mvn clean compile test
 
 #FROM openjdk:8-jdk-alpine
 #WORKDIR /
