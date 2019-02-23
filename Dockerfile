@@ -4,6 +4,6 @@ CMD mvn clean package
 
 FROM openjdk:8-jdk-alpine
 WORKDIR /
-COPY --from=build /target/ .
+COPY --from=build ./target/ .
 EXPOSE 8080
 CMD java -jar app.jar
