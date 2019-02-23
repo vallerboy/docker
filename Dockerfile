@@ -1,6 +1,6 @@
 FROM maven:3.3-jdk-8 as build
 COPY . .
-CMD mvn clean package
+RUN mvn clean package
 
 FROM openjdk:8-jdk-alpine
 WORKDIR /
